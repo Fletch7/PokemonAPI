@@ -18,12 +18,12 @@
         <p>Welcome — start building your site here.</p>
     </main>
 
-    <div id="container"> </div>
+    <div id="container"><div id="display"class="clickable"></div> </div>
 
-    <div id="display"></div>
+
 
     <script>
-        url = "https://pokeapi.co/api/v2/pokemon?limit=151&offset=1";
+        url = "https://pokeapi.co/api/v2/pokemon?limit=10&offset=1";
         async function getPokemon(url) {
             const res = await fetch(url);
             const data = await res.json();
